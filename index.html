@@ -1,14 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - Wilmer Andres Leguizamon Plata</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <script>
+        function showCV() {
+            document.getElementById('intro-screen').style.display = 'none';
+            document.getElementById('cv-container').style.display = 'block';
+        }
+    </script>
 </head>
 <body>
-    <h1>test</h1>
-    <h2>test 2</h2>
-    <h3>teste 3</h3>
+    <!-- Pantalla inicial -->
+    <div id="intro-screen" class="intro-screen">
+        <div class="intro-content">
+            <h1>Bienvenido</h1>
+            <p>Haz clic en el botón para ver mi hoja de vida.</p>
+            <button class="btn" onclick="showCV()">Ver Hoja de Vida</button>
+        </div>
+    </div>
+
+    <!-- Contenedor de la hoja de vida -->
+    <div id="cv-container" class="cv-container" style="display: none;">
+        <header>
+            <h1>Wilmer Andres Leguizamon Plata</h1>
+            <h2>Estudiante</h2>
+            <p>
+                Busco una nueva oportunidad laboral donde pueda enfrentar grandes retos y seguir creciendo profesionalmente. Me considero una persona responsable, eficiente y ordenada, con habilidades únicas que me permiten aprender rápidamente y adaptarme a los cambios del mundo actual.
+            </p>
+        </header>
+        <section class="main-content">
+            <aside>
+                <div class="section">
+                    <h3>Contacto</h3>
+                    <p><strong>Teléfono:</strong> +57 (319) 6373148</p>
+                    <p><strong>Correo:</strong> wilmerleguizamonplata@gmail.com</p>
+                    <p><strong>Ubicación:</strong> Cundinamarca, Bogotá D.C</p>
+                </div>
+                <div class="section">
+                    <h3>Lenguajes</h3>
+                    <p>Español: Nativo</p>
+                    <p>Inglés: Intermedio - Avanzado B1</p>
+                </div>
+                <div class="section">
+                    <h3>Tecnologías</h3>
+                    <ul>
+                        <li>Angular 8 (TypeScript)</li>
+                        <li>Laravel (PHP)</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>Git (GitLab & GitHub)</li>
+                        <li>SQL (PHPMyAdmin)</li>
+                        <li>HTML, CSS & JS</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h3>Otros</h3>
+                    <ul>
+                        <li>RESTful APIs</li>
+                        <li>Arquitectura MVC</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+            </aside>
+            <main>
+                <div class="section">
+                    <h3>Experiencia</h3>
+                    <p><strong>Universidad Autónoma de Manizales</strong> (Junio 2023 - Mayo 2024)</p>
+                    <p>Analista de Sistemas en una arquitectura FullStack en PHP con Laravel en el Backend usando REST-API y Angular para el Frontend con Bootstrap.</p>
+                    <p>Proyectos realizados: migración de Yii a una arquitectura más moderna, sistema de administración de estudiantes, y más.</p>
+                </div>
+                <div class="section">
+                    <h3>Educación</h3>
+                    <p><strong>Unidad Educativa Jean Piaget</strong> (2012 - 2019) - Bogotá, Colombia</p>
+                    <p><strong>Institución Educativa Chipre</strong> (2020 - 2022) - Mejor Bachiller</p>
+                    <p><strong>Universidad Autónoma de Manizales</strong> (2021 - 2024) - Técnico Profesional en Programación</p>
+                </div>
+                <div class="section">
+                    <h3>Educación Extra</h3>
+                    <ul>
+                        <li>Mastermind - Curso de HTML & CSS</li>
+                        <li>Udemy - Angular 14 y más</li>
+                    </ul>
+                </div>
+            </main>
+        </section>
+    </div>
 </body>
 </html>

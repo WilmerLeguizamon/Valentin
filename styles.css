@@ -1,0 +1,133 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Pantalla inicial */
+.intro-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('URL_DE_TU_IMAGEN') no-repeat center center / cover;
+    color: #fff;
+    text-align: center;
+}
+
+.intro-content {
+    max-width: 500px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.intro-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.intro-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d4af37;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #b58e2c;
+}
+
+/* Hoja de Vida */
+.cv-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #d4af37;
+}
+
+header h2 {
+    font-size: 1.2em;
+    margin: 5px 0 20px 0;
+    color: #fff;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+aside {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    border-right: 2px solid #fff;
+}
+
+main {
+    flex: 2;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #d4af37;
+}
+
+p, li {
+    line-height: 1.5;
+    color: #fff;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+strong {
+    color: #d4af37;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    aside {
+        border-right: none;
+        border-bottom: 2px solid #fff;
+        padding-bottom: 20px;
+    }
+}

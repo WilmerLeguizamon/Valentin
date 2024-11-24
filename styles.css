@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('URL_DE_TU_IMAGEN') no-repeat center center / cover;
+    background: url('https://nuevocampus.ucompensar.edu.co/wp-content/uploads/2022/06/u-compensar-render-2-1024x800.jpg') no-repeat center center / cover;
     color: #fff;
     text-align: center;
 }
@@ -130,4 +130,48 @@ strong {
         border-bottom: 2px solid #fff;
         padding-bottom: 20px;
     }
+}
+#experience-form {
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #d4af37;
+}
+
+input[type="text"], input[type="date"] {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #d4af37;
+    background-color: #222;
+    color: #fff;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #d4af37;
+    border: none;
+    padding: 10px;
+    color: #000;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #b58e2c;
 }

@@ -1,177 +1,101 @@
-/* General */
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000;
-    color: #fff;
-}
-
-/* Pantalla inicial */
-.intro-screen {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('https://nuevocampus.ucompensar.edu.co/wp-content/uploads/2022/06/u-compensar-render-2-1024x800.jpg') no-repeat center center / cover;
-    color: #fff;
+    background-color: #fff5f5;
+    font-family: 'Indie Flower', cursive;
+    overflow: hidden;
+}
+
+.container {
     text-align: center;
+    background-color: #ffebee;
+    padding: 40px;
+    border-radius: 20px;
+    border: 3px solid #ff6b81;
+    box-shadow: 0 8px 20px rgba(255, 107, 129, 0.3);
+    max-width: 400px;
+    width: 90%;
 }
 
-.intro-content {
-    max-width: 500px;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-}
-
-.intro-content h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.intro-content p {
-    font-size: 1.2em;
+.header_text {
+    font-size: 36px;
+    color: #ff6b81;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(255, 107, 129, 0.2);
+}
+
+.gif_container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #d4af37;
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
+    padding: 12px 24px;
+    font-size: 20px;
+    border: 2px solid #ff6b81;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    background-color: #ff6b81;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    box-shadow: 0 4px 10px rgba(255, 107, 129, 0.3);
 }
 
 .btn:hover {
-    background-color: #b58e2c;
+    background-color: white;
+    color: #ff6b81;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 107, 129, 0.4);
 }
 
-/* Hoja de Vida */
-.cv-container {
-    max-width: 900px;
-    margin: 20px auto;
-    background: #000;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+#noButton {
+    background-color: #ff4757;
+    border-color: #ff4757;
 }
 
-header {
-    text-align: center;
-    border-bottom: 2px solid #fff;
-    padding-bottom: 20px;
+#noButton:hover {
+    background-color: white;
+    color: #ff4757;
 }
 
-header h1 {
-    font-size: 2.5em;
-    margin: 0;
-    color: #d4af37;
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
 }
 
-header h2 {
-    font-size: 1.2em;
-    margin: 5px 0 20px 0;
-    color: #fff;
+.wiggle {
+    animation: wiggle 0.5s ease-in-out;
 }
 
-.main-content {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
+@keyframes heartFade {
+    0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(1.5); }
 }
 
-aside {
-    flex: 1;
-    max-width: 300px;
-    padding: 20px;
-    border-right: 2px solid #fff;
-}
-
-main {
-    flex: 2;
-    padding: 20px;
-}
-
-.section {
-    margin-bottom: 20px;
-}
-
-h3 {
-    font-size: 1.3em;
-    margin-bottom: 10px;
-    color: #d4af37;
-}
-
-p, li {
-    line-height: 1.5;
-    color: #fff;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-strong {
-    color: #d4af37;
-}
-
-@media (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
-    }
-
-    aside {
-        border-right: none;
-        border-bottom: 2px solid #fff;
-        padding-bottom: 20px;
-    }
-}
-#experience-form {
-    padding: 20px;
-    background-color: #000;
-    color: #fff;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-th, td {
-    border: 1px solid #fff;
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #333;
-    color: #d4af37;
-}
-
-input[type="text"], input[type="date"] {
-    width: 90%;
-    padding: 5px;
-    border: 1px solid #d4af37;
-    background-color: #222;
-    color: #fff;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #d4af37;
-    border: none;
-    padding: 10px;
-    color: #000;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #b58e2c;
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+    animation: heartFade 1s ease-out forwards;
+    background-color: #ff6b81;
+    border-radius: 50%;
 }
